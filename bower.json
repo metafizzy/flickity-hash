@@ -1,0 +1,26 @@
+{
+  "name": "flickity-hash",
+  "description": "Enable hash navigation for Flickity",
+  "main": "hash.js",
+  "dependencies": {
+    "flickity": "^2.1.0"
+  },
+  "authors": [
+    "David DeSandro"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "flickity",
+    "carousel",
+    "hash"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "sandbox"
+  ]
+}
