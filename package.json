@@ -15,5 +15,13 @@
     "hash"
   ],
   "author": "David DeSandro",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metafizzy/flickity-hash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metafizzy/flickity-hash/issues"
+  },
+  "homepage": "https://github.com/metafizzy/flickity-hash#readme"
 }
