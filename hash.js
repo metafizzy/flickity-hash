@@ -1,5 +1,5 @@
 /*!
- * Flickity hash v1.0.0
+ * Flickity hash v1.0.1
  * Enable hash navigation for Flickity
  */
 
@@ -52,7 +52,7 @@ proto._createHash = function() {
 };
 
 proto.activateHash = function() {
-  this.on( 'select', this.onSelectHash );
+  this.on( 'change', this.onChangeHash );
 
   // overwrite initialIndex
   if ( this.options.initialIndex === undefined && location.hash ) {
@@ -67,15 +67,11 @@ proto.activateHash = function() {
 
 
 proto.deactivateHash = function() {
-  this.off( 'select', this.onSelectHash );
+  this.off( 'change', this.onChangeHash );
   this.disconnectHashLinks();
 };
 
-proto.onSelectHash = function() {
-  if ( !this.isInitActivated ) {
-    // do not set hash for initial select
-    return;
-  }
+proto.onChangeHash = function() {
   var id = this.selectedElement.id;
   if ( id ) {
     var url = '#' + id;

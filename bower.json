@@ -1,6 +1,6 @@
 {
   "name": "flickity-hash",
-  "description": "Enable hash navigation for Flickity",
+  "description": "Select Flickity slides with links ",
   "main": "hash.js",
   "dependencies": {
     "flickity": "^2.1.0"
