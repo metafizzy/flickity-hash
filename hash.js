@@ -1,5 +1,5 @@
 /*!
- * Flickity hash v1.0.1
+ * Flickity hash v1.0.2
  * Enable hash navigation for Flickity
  */
 
@@ -11,12 +11,12 @@
   if ( typeof define == 'function' && define.amd ) {
     // AMD
     define( [
-      './flickity',
+      'flickity/js/index',
     ], factory );
   } else if ( typeof module == 'object' && module.exports ) {
     // CommonJS
     module.exports = factory(
-      require('./flickity')
+      require('flickity')
     );
   } else {
     // browser global
