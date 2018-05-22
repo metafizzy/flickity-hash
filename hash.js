@@ -42,8 +42,8 @@ proto._createHash = function() {
   // use HTML5 history pushState to prevent page scroll jump
   this.onHashLinkClick = function( event ) {
     event.preventDefault();
-    this.selectCell( event.target.hash );
-    history.replaceState( null, '', event.target.hash );
+    this.selectCell( event.currentTarget.hash );
+    history.replaceState( null, '', event.currentTarget.hash );
   }.bind( this );
 
   // events
