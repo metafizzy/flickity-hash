@@ -1,5 +1,5 @@
 /*!
- * Flickity hash v1.0.2
+ * Flickity hash v1.0.3
  * Enable hash navigation for Flickity
  */
 
