@@ -43,7 +43,7 @@ proto._createHash = function() {
   this.onHashLinkClick = function( event ) {
     event.preventDefault();
     this.selectCell( event.currentTarget.hash );
-    history.replaceState( null, '', event.currentTarget.hash );
+    history.replaceState( history.state, '', event.currentTarget.hash );
   }.bind( this );
 
   // events
@@ -75,7 +75,7 @@ proto.onChangeHash = function() {
   var id = this.selectedElement.id;
   if ( id ) {
     var url = '#' + id;
-    history.replaceState( null, '', url );
+    history.replaceState( history.state, '', url );
   }
 };
 
