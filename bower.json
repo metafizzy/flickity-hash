@@ -3,7 +3,7 @@
   "description": "Select Flickity slides with links ",
   "main": "hash.js",
   "dependencies": {
-    "flickity": "^2.1.0"
+    "flickity": "^3.0.0"
   },
   "authors": [
     "David DeSandro"

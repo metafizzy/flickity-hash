@@ -14,19 +14,19 @@ Add `hash.js` to your scripts.
 
 ### Download
 
-+ [hash.js](https://unpkg.com/flickity-hash@1/hash.js)
++ [hash.js](https://unpkg.com/flickity-hash@2/hash.js)
 
 ### CDN
 
 ``` html
-<script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+<script src="https://unpkg.com/flickity-hash@2/hash.js"></script>
 ```
 
 ### Package managers
 
 npm: `npm install flickity-hash`
 
-Bower: `bower install flickity-hash`
+Yarn: `yarn add flickity-hash`
 
 ## Usage
 
@@ -34,14 +34,14 @@ Enable hash behavior by setting `hash: true` in Flickity options.
 
 ``` js
 // jQuery
-var $carousel = $('.carousel').flickity({
+let $carousel = $('.carousel').flickity({
   hash: true,
 });
 ```
 
 ``` js
 // vanilla JS
-var flkty = new Flickity( '.carousel', {
+let flkty = new Flickity( '.carousel', {
   hash: true,
 });
 ```
@@ -71,23 +71,14 @@ Hash links will select slides on click.
 <a href="#carousel-cell2">View cell 2</a>
 ```
 
-### Webpack & Browserify
+### Webpack
 
 ``` js
-var Flickity = require('flickity-hash');
+const Flickity = require('flickity');
+require('flickity-hash');
 
-var flkty = new Flickity( '.carousel', {
+let flkty = new Flickity( '.carousel', {
   hash: true,
-});
-```
-
-### RequireJS
-
-``` js
-requirejs( [ 'path/to/flickity-hash' ], function( Flickity ) {
-  var flkty = new Flickity( '.carousel', {
-    hash: true,
-  });
 });
 ```
 
