@@ -24,7 +24,7 @@ Flickity.create.hash = function() {
   this.onHashLinkClick = ( event ) => {
     event.preventDefault();
     this.selectCell( event.currentTarget.hash );
-    history.replaceState( null, '', event.currentTarget.hash );
+    history.replaceState( history.state, '', event.currentTarget.hash );
   };
 
   // events
@@ -55,7 +55,7 @@ proto.deactivateHash = function() {
 
 proto.onChangeHash = function() {
   let id = this.selectedElement.id;
-  if ( id ) history.replaceState( null, '', `#${id}` );
+  if ( id ) history.replaceState( history.state, '', `#${id}` );
 };
 
 proto.connectHashLinks = function() {
