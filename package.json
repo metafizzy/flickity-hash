@@ -1,6 +1,6 @@
 {
   "name": "flickity-hash",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Select Flickity slides with links ",
   "main": "hash.js",
   "peerDependencies": {
